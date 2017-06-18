@@ -1,0 +1,10 @@
+{
+  "name": "mouse-control",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "express": "^4.15.2",
+    "robotjs": "^0.4.7",
+    "socket.io": "^2.0.3"
+  }
+}
