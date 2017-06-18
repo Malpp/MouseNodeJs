@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
 		//Move cursor
 		if (currentTouchSize == 1) {
 			touchBox.innerHTML = "Move\n" + xDiff + "\n" + yDiff;
-			socket.emit('move', {x:xDiff, y:yDiff});
+			socket.emit('move', { x: xDiff, y: yDiff });
 		}
 		//Scroll
 		else if (currentTouchSize == 2) {

@@ -1,24 +1,15 @@
 # Mouse
-Windows mouse control with Flask
+Windows mouse control with Node.js
 
 ## Setup
-0. Get the requirements for python (Flask)
-1. Run the python script
+1. Run the server.js with `node server.js`
 2. On a mobile device, go to your computers local IP
 
 ## How to use
-- Single tap: Left click
-- Hold: Right click
-- Move finger: move mouse
-- Move finger on right side of screen: scroll
+- Left click: tap
+- Right click: hold for a bit (250ms to 550ms)
+- Move: move your finger
+- Scroll: move with 2 fingers
 
 ## Notes
-This was only tested on iOS 9 with an iPod 5G and an iPad 2, although since it is a website, it should work on all devices
-
-## Future
-Somehow make it faster:
-- Sockets
-- Optimizing
-
-## Shoutouts
-Thanks to https://github.com/Tyriar/touchtap-event for simplifying my life and of course google
+Tested on Chrome for android and Safari for iOS with no issues
