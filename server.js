@@ -35,14 +35,14 @@ io.on('connection', function (socket) {
         if (msg.x > 1) {
             moveX = 1;
         }
-        else if (msg.x < 1) {
+        else if (msg.x < -1) {
             moveX = -1;
         }
 
         if (msg.y > 1) {
             moveY = 1;
         }
-        else if (msg.y < 1) {
+        else if (msg.y < -1) {
             moveY = -1;
         }
         robot.scrollMouse(moveY, moveX);

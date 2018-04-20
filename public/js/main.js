@@ -49,12 +49,12 @@ window.addEventListener('load', function () {
 
 		//Move cursor
 		if (currentTouchSize == 1) {
-			touchBox.innerHTML = "Move\n" + xDiff + "\n" + yDiff;
+			//touchBox.innerHTML = "Move\n" + xDiff + "\n" + yDiff;
 			socket.emit('move', { x: xDiff, y: yDiff });
 		}
 		//Scroll
 		else if (currentTouchSize == 2) {
-			touchBox.innerHTML = "Scroll\n" + yDiff;
+			//touchBox.innerHTML = "Scroll\n" + yDiff;
 			socket.emit('scroll', { x: xDiff, y: yDiff });
 		}
 
@@ -82,11 +82,11 @@ window.addEventListener('load', function () {
 			if (currentTouchSize == 1) {
 				let timeElasped = Date.now() - timePressed;
 				if (timeElasped < 250) {
-					touchBox.innerHTML = "Click";
+					//touchBox.innerHTML = "Click";
 					socket.emit('click', '');
 				}
 				else if (timeElasped >= 250 && timeElasped < 550) {
-					touchBox.innerHTML = "Right click";
+					//touchBox.innerHTML = "Right click";
 					socket.emit('rclick', '');
 				}
 			}
